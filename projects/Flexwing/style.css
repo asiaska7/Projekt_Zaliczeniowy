@@ -1,0 +1,49 @@
+body{
+    font-family: 'Rubik', sans-serif !important;
+}
+.menu{
+    background: rgb(14,42,62);
+}
+
+.fit{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    }
+
+.cover{
+    height: 100vh;
+    overflow:hidden;
+}
+
+.top{
+    height: 35%;
+}
+
+.bottom{
+    height: 65%;
+}
+
+.katamaran{
+    position: relative;
+}
+
+.katamaran img{
+    position: absolute;
+    bottom:0%;
+}
+
+/* nawigacja - projekt */
+.dropdown-menu{
+    background-color: rgb(14,42,62) !important;
+}
+
+/* tło pod menu przy scrollu */
+.navbar.scrolled{
+    background: rgba(14, 42, 62, 0.7);
+    transition: background 500ms;
+}
+
+.header{
+    color: rgb(14,42,62);
+}
