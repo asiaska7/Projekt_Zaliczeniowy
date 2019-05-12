@@ -57,23 +57,32 @@
                 </div>
                 <div class=" col-sm-12 col-md-8 p-0 cover">
                     <div class="row top">
-                        <div class="col-sm-12 col-md-4 p-0 hover-fade">
-                               <a href="#about"> <img src="./img/boat-detal.jpg" class="img-responsive fit "  alt="pic"></a>
-                               
+                        <div class="col-sm-12 col-md-4 p-0 boat">
+                                <img src="./img/boat.jpg" class="img-responsive fit "  alt="pic">
+                               <div class="card-img-overlay">
+                                <a href="#about"><h6 class="text-white text-uppercase p-1 img-title">About</h6></a>
+                              </div>
                         </div>
-                        <div class="col-sm-12 col-md-8 p-0 katamaran">
-                                <a href="#inspiration"><img src="./img/katamaran-bottom.jpg" class="img-responsive fit "  alt="pic" style="background-position:0% 100%"></a>
-
+                        <div class="col-sm-12 col-md-8 p-0">
+                                <img src="./img/katamaran.jpg" class="img-responsive fit "  alt="pic">
+                                <div class="card-img-overlay">
+                                    <a href="#inspiration"><h6 class="text-white text-uppercase p-1 img-title">Inspiration</h6></a>
+                                  </div>
                         </div>
                     </div>
                     <div class="row bottom">
-                        <div class="col-sm-12 col-md-8 p-0 hover-fade">
-                               <a href="#advantages"> <img src="./img/bottom.jpg" class="img-responsive fit "  alt="katamaran"></a>
-
+                        <div class="col-sm-12 col-md-8 p-0">
+                               <a href="#advantages"> <img src="./img/bottom.jpg" class="img-responsive fit "  alt="pic"></a>
+                               <div class="card-img-overlay">
+                                <a href="#advantages"><h6 class="text-white text-uppercase p-1 img-title">Advantages</h6></a>
+                              </div>
                         </div>
-                        <div class="col-sm-12 col-md-4 p-0 hover-fade">
-                               <a href="#market"> <img src="./img/onesail.jpg" class="img-responsive fit"  alt="katamaran"> </a>
-                        </div>
+                        <div class="col-sm-12 col-md-4 p-0">
+                               <a href="#market"> <img src="./img/onesail.jpg" class="img-responsive fit"  alt="pic"> </a>
+                               <div class="card-img-overlay">
+                                <a href="#market"><h6 class="text-white text-uppercase p-1 img-title">Market</h6></a>
+                              </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -301,6 +310,12 @@
                 var $nav = $("#menu");
                 $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
             });
+        });
+
+            $(document).ready(function () {
+                $('.effect').hover(function(){
+        $('.effect').toggleClass('fall-item');
+    });
         });
         
     </script>
